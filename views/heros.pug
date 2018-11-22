@@ -1,0 +1,21 @@
+extends layout
+
+block content
+
+	each val in data
+		.row
+			.col-6
+				.card.blue-grey.lighten-2.container
+				
+       
+					.card-content.white-text.z-depth-5
+					
+						p Real Name :#{val.alter_ego}
+						p Publisher :#{val.publisher}
+							
+								a(href='view?id='+val.id) view
+
+								a(href='deleteHero?id='+val.id) Delete
+
+								a(href='update?id='+val.id) Update
+

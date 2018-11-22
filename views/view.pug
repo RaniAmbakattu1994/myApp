@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+	each val in data
+		.row
+			.col-6
+				.card.blue-grey.lighten-2.container
+				
+       
+					.card-content.white-text.z-depth-5
+					
+						p Real Name :#{val.superhero}
+						p Publisher :#{val.publisher}
+						p AlterEgo :#{val.alter_ego}
+						p FirstAppearance :#{val.first_appearance}
+						p Characters :#{val.characters}
